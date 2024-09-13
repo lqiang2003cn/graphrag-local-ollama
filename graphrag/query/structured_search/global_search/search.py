@@ -179,7 +179,7 @@ class GlobalSearch(BaseSearch):
                 {"role": "user", "content": query},
             ]
             async with self.semaphore:
-                # print(search_messages[0]['content'])
+                print(search_messages[0]['content'])
                 search_response = await self.llm.agenerate(
                     messages=search_messages, streaming=False, **llm_kwargs
                 )

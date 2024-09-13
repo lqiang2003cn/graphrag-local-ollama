@@ -34,12 +34,9 @@ Points supported by data should list the relevant reports as references as follo
 "This is an example sentence supported by data references [Data: Reports (report ids)]"
 
 **Do not list more than 5 record ids in a single reference**. Instead, list the top 5 most relevant record ids and add "+more" to indicate that there are more.
-
 For example:
 "Person X is the owner of Company Y and subject to many allegations of wrongdoing [Data: Reports (2, 7, 64, 46, 34, +more)]. He is also CEO of company X [Data: Reports (1, 3)]"
-
 where 1, 2, 3, 7, 34, 46, and 64 represent the id (not the index) of the relevant data report in the provided tables.
-
 Do not include information where the supporting evidence for it is not provided.
 
 
@@ -79,4 +76,14 @@ The response should be JSON formatted as follows:
         {{"description": "Description of point 2 [Data: Reports (report ids)]", "score": score_value}}
     ]
 }}
+
+---Notes---
+Pay attention to the above examples and must return a JSON formatted as follows:
+{{
+    "points": [
+        {{"description": "Description of point 1 [Data: Reports (report ids)]", "score": score_value}},
+        {{"description": "Description of point 2 [Data: Reports (report ids)]", "score": score_value}}
+    ]
+}}
+
 """
