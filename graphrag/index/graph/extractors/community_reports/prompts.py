@@ -14,7 +14,7 @@ The report should include the following sections:
 
 - TITLE: community's name that represents its key entities - title should be short but specific. When possible, include representative named entities in the title.
 - SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant information associated with its entities.
-- IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community.  IMPACT is the scored importance of a community.
+- IMPACT SEVERITY RATING: a score (its type must be a float) between 0-10 that represents the severity of IMPACT posed by entities within the community.  IMPACT is the scored importance of a community.
 - RATING EXPLANATION: Give a single sentence explanation of the IMPACT severity rating.
 - DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive.
 
@@ -110,7 +110,7 @@ The report should include the following sections:
 
 - TITLE: community's name that represents its key entities - title should be short but specific. When possible, include representative named entities in the title.
 - SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant information associated with its entities.
-- IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community.  IMPACT is the scored importance of a community.
+- IMPACT SEVERITY RATING: a score (its type must be a float) between 0-10 that represents the severity of IMPACT posed by entities within the community.  IMPACT is the scored importance of a community.
 - RATING EXPLANATION: Give a single sentence explanation of the IMPACT severity rating.
 - DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive.
 

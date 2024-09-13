@@ -1,10 +1,10 @@
-
 encoding_model: cl100k_base
-skip_workflows: []
+skip_workflows: [ ]
 llm:
   api_key: ${GRAPHRAG_API_KEY}
   type: openai_chat # or azure_openai_chat
-  model: mistral
+#  model: mistral
+  model: llama3.1
   model_supports_json: true # recommended if this is available for your model.
   # max_tokens: 4000
   # request_timeout: 180.0
@@ -45,14 +45,14 @@ embeddings:
     # batch_size: 16 # the number of documents to send in a single request
     # batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
     # target: required # or optional
-  
+
 
 
 chunks:
   size: 300
   overlap: 100
-  group_by_columns: [id] # by default, we don't allow chunks to cross documents
-    
+  group_by_columns: [ id ] # by default, we don't allow chunks to cross documents
+
 input:
   type: file # or blob
   file_type: text # or csv
@@ -83,7 +83,7 @@ entity_extraction:
   ## parallelization: override the global parallelization settings for this task
   ## async_mode: override the global async_mode settings for this task
   prompt: "prompts/entity_extraction.txt"
-  entity_types: [organization,person,geo,event]
+  entity_types: [ organization,person,geo,event ]
   max_gleanings: 0
 
 summarize_descriptions:
@@ -130,16 +130,16 @@ snapshots:
   top_level_nodes: yes
 
 local_search:
-  # text_unit_prop: 0.5
-  # community_prop: 0.1
-  # conversation_history_max_turns: 5
-  # top_k_mapped_entities: 10
-  # top_k_relationships: 10
-  # max_tokens: 12000
+# text_unit_prop: 0.5
+# community_prop: 0.1
+# conversation_history_max_turns: 5
+# top_k_mapped_entities: 10
+# top_k_relationships: 10
+# max_tokens: 12000
 
 global_search:
-  # max_tokens: 12000
-  # data_max_tokens: 12000
-  # map_max_tokens: 1000
-  # reduce_max_tokens: 2000
-  # concurrency: 32
+# max_tokens: 12000
+# data_max_tokens: 12000
+# map_max_tokens: 1000
+# reduce_max_tokens: 2000
+# concurrency: 32
